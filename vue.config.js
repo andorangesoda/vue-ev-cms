@@ -2,8 +2,6 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   // 不用给所有包进行降级兼容处理
   transpileDependencies: false,
-  // 服务器部署的路径，默认为'/'。设置相对路径可以部署在服务器的任意地方，但不推荐。
-  publicPath: './',
   // 打包优化项配置
   configureWebpack: {
     externals: {
